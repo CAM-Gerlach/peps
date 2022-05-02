@@ -54,7 +54,8 @@ To use this template you must first decide whether your PEP is going
 to be an Informational or Standards Track PEP.  Most PEPs are
 Standards Track because they propose a new feature for the Python
 language or standard library.  When in doubt, read :pep:`1` for details,
-or open a tracker issue on the PEPs repo to ask for assistance.
+or open an `issue on the PEPs repository
+<https://github.com/python/peps/issues>`_ to ask for assistance.
 
 Once you've decided which type of PEP yours is going to be, follow the
 directions below.
