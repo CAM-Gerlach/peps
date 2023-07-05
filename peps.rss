@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Newest Python PEPs</title>
+    <link>https://peps.python.org/peps.rss</link>
+    <description>Newest Python Enhancement Proposals (PEPs) - Information on new language features, and some meta-information like release procedure and schedules.</description>
+    <atom:link href="https://peps.python.org/peps.rss" rel="self"/>
+    <docs>https://cyber.harvard.edu/rss/rss.html</docs>
+    <language>en</language>
+    <lastBuildDate>Wed, 05 Jul 2023 19:55:34 GMT</lastBuildDate>
+    <item>
+      <title>PEP 715: Disabling bdist_egg distribution uploads on PyPI</title>
+      <link>https://peps.python.org/pep-0715/</link>
+      <description>This PEP recommends deprecating and then disabling new uploads of the bdist_egg distribution type on PyPI. In a parallel move, this PEP recommends deprecating and then disabling new uploads of distribution filenames that have the .egg suffix.</description>
+      <author>William Woodruff (william@yossarian.net)</author>
+      <guid isPermaLink="true">https://peps.python.org/pep-0715/</guid>
+      <pubDate>Tue, 06 Jun 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>PEP 714: Rename dist-info-metadata in the Simple API</title>
+      <link>https://peps.python.org/pep-0714/</link>
+      <description>This PEP renames the metadata provided by PEP 658 in both HTML and JSON formats of the Simple API and provides guidelines for both clients and servers in how to handle the renaming.</description>
+      <author>Donald Stufft (donald@stufft.io)</author>
+      <guid isPermaLink="true">https://peps.python.org/pep-0714/</guid>
+      <pubDate>Tue, 06 Jun 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>PEP 719: Python 3.13 Release Schedule</title>
+      <link>https://peps.python.org/pep-0719/</link>
+      <description>This document describes the development and release schedule for Python 3.13.  The schedule primarily concerns itself with PEP-sized items.</description>
+      <author>Thomas Wouters (thomas@python.org)</author>
+      <guid isPermaLink="true">https://peps.python.org/pep-0719/</guid>
+      <pubDate>Fri, 26 May 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>PEP 713: Callable Modules</title>
+      <link>https://peps.python.org/pep-0713/</link>
+      <description>Modules are currently not directly callable. Classes can define a __call__ method that makes instance objects callable, but defining a similarly named function in the global module scope has no effect, and that function can only be called by importing or referencing it directly as module.__call__. PEP 562 added support for :meth:`~object.__getattr__` and :meth:`~object.__dir__` for modules, but defining __getattr__ to return a value for __call__ still does not make a module callable.</description>
+      <author>Amethyst Reese (amethyst at n7.gg)</author>
+      <guid isPermaLink="true">https://peps.python.org/pep-0713/</guid>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>PEP 711: PyBI: a standard format for distributing Python Binaries</title>
+      <link>https://peps.python.org/pep-0711/</link>
+      <description>“Like wheels, but instead of a pre-built python package, it’s a pre-built python interpreter”</description>
+      <author>Nathaniel J. Smith (njs@pobox.com)</author>
+      <guid isPermaLink="true">https://peps.python.org/pep-0711/</guid>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>PEP 710: Recording the provenance of installed packages</title>
+      <link>https://peps.python.org/pep-0710/</link>
+      <description>This PEP describes a way to record the provenance of installed Python distributions. The record is created by an installer and is available to users in the form of a JSON file provenance_url.json in the .dist-info directory. The mentioned JSON file captures additional metadata to allow recording a URL to a :term:`distribution package` together with the installed distribution hash. This proposal is built on top of PEP 610 following :ref:`its corresponding canonical PyPA spec &lt;packaging:direct-url&gt;` and complements direct_url.json with provenance_url.json for when packages are identified by a name, and optionally a version.</description>
+      <author>Fridolín Pokorný (fridolin.pokorny at gmail.com)</author>
+      <guid isPermaLink="true">https://peps.python.org/pep-0710/</guid>
+      <pubDate>Mon, 27 Mar 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>PEP 709: Inlined comprehensions</title>
+      <link>https://peps.python.org/pep-0709/</link>
+      <description>Comprehensions are currently compiled as nested functions, which provides isolation of the comprehension's iteration variable, but is inefficient at runtime. This PEP proposes to inline list, dictionary, and set comprehensions into the code where they are defined, and provide the expected isolation by pushing/popping clashing locals on the stack. This change makes comprehensions much faster: up to 2x faster for a microbenchmark of a comprehension alone, translating to an 11% speedup for one sample benchmark derived from real-world code that makes heavy use of comprehensions in the context of doing actual work.</description>
+      <author>Carl Meyer (carl@oddbird.net)</author>
+      <guid isPermaLink="true">https://peps.python.org/pep-0709/</guid>
+      <pubDate>Fri, 24 Feb 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>PEP 708: Extending the Repository API to Mitigate Dependency Confusion Attacks</title>
+      <link>https://peps.python.org/pep-0708/</link>
+      <description>Dependency confusion attacks, in which a malicious package is installed instead of the one the user expected, are an increasingly common supply chain threat. Most such attacks against Python dependencies, including the recent PyTorch incident, occur with multiple package repositories, where a dependency expected to come from one repository (e.g. a custom index) is installed from another (e.g. PyPI).</description>
+      <author>Donald Stufft (donald@stufft.io)</author>
+      <guid isPermaLink="true">https://peps.python.org/pep-0708/</guid>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>PEP 707: A simplified signature for __exit__ and __aexit__</title>
+      <link>https://peps.python.org/pep-0707/</link>
+      <description>This PEP proposes to make the interpreter accept context managers whose :meth:`~py3.11:object.__exit__` / :meth:`~py3.11:object.__aexit__` method takes only a single exception instance, while continuing to also support the current (typ, exc, tb) signature for backwards compatibility.</description>
+      <author>Irit Katriel (iritkatriel@gmail.com)</author>
+      <guid isPermaLink="true">https://peps.python.org/pep-0707/</guid>
+      <pubDate>Sat, 18 Feb 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>PEP 706: Filter for tarfile.extractall</title>
+      <link>https://peps.python.org/pep-0706/</link>
+      <description>The extraction methods in :external+py3.11:mod:`tarfile` gain a filter argument, which allows rejecting files or modifying metadata as the archive is extracted. Three built-in named filters are provided, aimed at limiting features that might be surprising or dangerous. These can be used as-is, or serve as a base for custom filters.</description>
+      <author>Petr Viktorin (encukou@gmail.com)</author>
+      <guid isPermaLink="true">https://peps.python.org/pep-0706/</guid>
+      <pubDate>Thu, 09 Feb 2023 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
